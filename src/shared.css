@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Roboto');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+    margin: 0;
+    min-height: 100vh;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    position: absolute;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0;
+}
+
+body h1 {
+    font-family: 'Lato', sans-serif;
+}
+
+main {
+    position: absolute;
+    background-color: pink;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    top: 3.5rem;
+}
+
+button {
+    
+}
+
+button:focus {
+    outline: none;
+    -webkit-box-shadow: 0px 0px 1px 2px #FFFFFF, 0px 0px 2px 3px #969696, 0px 0px 3px 5px #000000; 
+    box-shadow: 0px 0px 1px 2px #FFFFFF, 0px 0px 2px 3px #969696, 0px 0px 3px 5px #000000;
+}
+
+input:focus {
+    outline: none;
+   -webkit-box-shadow: 0px 0px 1px 2px #FFFFFF, 0px 0px 2px 3px #969696, 0px 0px 3px 5px #000000; 
+    box-shadow: 0px 0px 1px 2px #FFFFFF, 0px 0px 2px 3px #969696, 0px 0px 3px 5px #000000;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+    -webkit-box-shadow: 0px 0px 1px 2px #FFFFFF, 0px 0px 2px 3px #969696, 0px 0px 3px 5px #000000; 
+    box-shadow: 0px 0px 1px 2px #FFFFFF, 0px 0px 2px 3px #969696, 0px 0px 3px 5px #000000;
+}
+
+div:focus {
+    outline: none;
+    -webkit-box-shadow: 0px 0px 1px 2px #FFFFFF, 0px 0px 2px 3px #969696, 0px 0px 3px 5px #000000; 
+    box-shadow: 0px 0px 1px 2px #FFFFFF, 0px 0px 2px 3px #969696, 0px 0px 3px 5px #000000;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+.no-display.hide-png {
+    display: none;
+}
+
+.no-display.hide-svg {
+    display: none;
+}
+    
