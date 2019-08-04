@@ -8,12 +8,12 @@ module.exports = {
 	},
 	devtool: 'inline-source-map',
 	devServer: {
-		contentBase: path.join(__dirname, './dist'),
-		compress: true,
-		port: 9090
+			contentBase: path.resolve(__dirname, './dist'),
+			index: 'index.html',
+			port: 9000
 	},
 	output: {
-		filename: '[name].[contenthash].js',
+		filename: '[name].[hash].js',
 		path: path.resolve(__dirname, './dist'),
 		publicPath: './'
 	},
@@ -29,7 +29,7 @@ module.exports = {
 				}
 			}
 		}
-		
+
 	},
 	mode: 'development',
 	module: {
@@ -46,8 +46,8 @@ module.exports = {
 			{
 				test: /\.css$/,
 				use: ['style-loader', 'css-loader']
-					
-					
+
+
 			},
 			{
 				test: /\.js$/,
@@ -65,7 +65,7 @@ module.exports = {
 			{
 				test: /\.css$/,
 				use: ['style-loader', 'css-loader'],
-					
+
 			},
 			{
 				test: /\.hbs$/,

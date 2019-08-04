@@ -1,6 +1,10 @@
 import '!style-loader!css-loader!./home.css';
+
+import PizzaHomeBg from './images/pizza-home-bg.png';
 import Menu from './menu.js';
 import Contact from './contact.js';
+
+
 
 let menu = new Menu();
 let contact = new Contact();
@@ -8,6 +12,8 @@ let contact = new Contact();
 class Home {
 	render(){
 		let homeSection = document.createElement("section");
+		homeSection.style.background = `url(${PizzaHomeBg})`;
+		homeSection.style.backgroundSize = 'cover';
 		// homeSection.classList.add("slider-section");
 		homeSection.id = "home-container";
 		homeSection.insertAdjacentHTML("beforeend", `
@@ -33,7 +39,7 @@ class Home {
 					contact.remove();
 				}
 				menu.render();
-			}	
+			}
 		});
 
 

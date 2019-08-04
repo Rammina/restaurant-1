@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Lora:700i|Raleway&display=swap');
 
 * {
     box-sizing: border-box;
@@ -17,14 +17,15 @@ html {
 body {
     position: absolute;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
     width: 100%;
     min-height: 100vh;
     padding: 0;
 }
 
-body h1 {
-    font-family: 'Lato', sans-serif;
+body h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lora', serif;
+    text-transform: uppercase;
 }
 
 main {
@@ -37,18 +38,18 @@ main {
 }
 
 button {
-    
+
 }
 
 button:focus {
     outline: none;
-    -webkit-box-shadow: 0px 0px 1px 2px #FFFFFF, 0px 0px 2px 3px #969696, 0px 0px 3px 5px #000000; 
+    -webkit-box-shadow: 0px 0px 1px 2px #FFFFFF, 0px 0px 2px 3px #969696, 0px 0px 3px 5px #000000;
     box-shadow: 0px 0px 1px 2px #FFFFFF, 0px 0px 2px 3px #969696, 0px 0px 3px 5px #000000;
 }
 
 input:focus {
     outline: none;
-   -webkit-box-shadow: 0px 0px 1px 2px #FFFFFF, 0px 0px 2px 3px #969696, 0px 0px 3px 5px #000000; 
+   -webkit-box-shadow: 0px 0px 1px 2px #FFFFFF, 0px 0px 2px 3px #969696, 0px 0px 3px 5px #000000;
     box-shadow: 0px 0px 1px 2px #FFFFFF, 0px 0px 2px 3px #969696, 0px 0px 3px 5px #000000;
 }
 
@@ -58,13 +59,13 @@ a {
 
 a:focus {
     outline: none;
-    -webkit-box-shadow: 0px 0px 1px 2px #FFFFFF, 0px 0px 2px 3px #969696, 0px 0px 3px 5px #000000; 
+    -webkit-box-shadow: 0px 0px 1px 2px #FFFFFF, 0px 0px 2px 3px #969696, 0px 0px 3px 5px #000000;
     box-shadow: 0px 0px 1px 2px #FFFFFF, 0px 0px 2px 3px #969696, 0px 0px 3px 5px #000000;
 }
 
 div:focus {
     outline: none;
-    -webkit-box-shadow: 0px 0px 1px 2px #FFFFFF, 0px 0px 2px 3px #969696, 0px 0px 3px 5px #000000; 
+    -webkit-box-shadow: 0px 0px 1px 2px #FFFFFF, 0px 0px 2px 3px #969696, 0px 0px 3px 5px #000000;
     box-shadow: 0px 0px 1px 2px #FFFFFF, 0px 0px 2px 3px #969696, 0px 0px 3px 5px #000000;
 }
 
@@ -80,4 +81,3 @@ li {
 .no-display.hide-svg {
     display: none;
 }
-    
