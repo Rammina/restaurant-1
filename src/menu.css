@@ -1,6 +1,7 @@
 #menu-container{
 	width: 100%;
-	height: 25rem;
+	min-height: 25rem;
+	height: auto;
 	padding: 0 1rem;
 	padding-top: 4.5rem;
 	padding-bottom: 2rem;
@@ -12,6 +13,7 @@
 	height: 100%;
 	width: 100%;
 	background-color: rgba(244,229,164, 0.95);
+	padding: 0.8rem;
 }
 
 #menu-flex-container{
@@ -22,14 +24,42 @@
 	justify-content: center;
 	align-content: center;
 	align-items: center;
-	height: 100%;
+	height: auto;
 	width: 100%;
+
 }
 
 #menu-header, #menu-paragraph{
 	/*margin: 0 auto;*/
 	width: 100%;
+	margin-bottom: 1rem;
 	text-align: center;
+}
+
+.menu-category-header{
+	min-width: 13.5rem;
+	width: 55%;
+	margin: 0 auto;
+	margin-bottom: 0.7rem;
+	/*width: 100%;*/
+	/*text-align: center;*/
+}
+
+.menu-category{
+	width: 100%;
+}
+
+.menu-food-items{
+	min-width: 12.5rem;
+	width: 50%;
+	margin: 0 auto;
+	padding: 0;
+	/*padding-left: 1.7rem;*/
+	margin-bottom: 1rem;
+}
+
+.menu-food-item{
+	/*text-align: center;*/
 }
 
 @media screen and (min-width: 750px) {
@@ -41,9 +71,15 @@
 
 @media screen and (min-width: 1000px) {
 	#menu-container {
-		height: calc(100vh);
+		min-height: calc(100vh);
 		padding-left: 5rem;
 		padding-right: 5rem;
 	}
-
+	#menu-content{
+		min-height: calc(100vh - 6.5rem);
+	}
+	.menu-category{
+		width: 33.3%;
+		margin: 0 auto;
+	}
 }

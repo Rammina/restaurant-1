@@ -45,7 +45,8 @@ class Home {
 			}
 		});
 
-
+		// make the navigation bar transparent
+		document.querySelector(".main-header").classList.remove("opaque");
 	}
 	remove(){
 		let homeSection = document.getElementById("home-container");

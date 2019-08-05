@@ -26,6 +26,9 @@ class Contact {
 	            </div>
 		`);
 		document.querySelector("main").appendChild(contactSection);
+
+		// make the navigation bar opaque
+		document.querySelector(".main-header").classList.add("opaque");
 	}
 	remove(){
 		let contactSection = document.getElementById("contact-container");

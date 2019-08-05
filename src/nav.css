@@ -73,7 +73,7 @@
     color: #fefefe;
     background-color: rgb(30, 30, 30);
     transform: translate(8rem);
-    transition: all 0.25s ease-in;
+    transition: visibility 0.25s ease-in, transform 0.25s ease-in;
     visibility: hidden;
     }
 #nav-backdrop{
@@ -117,7 +117,7 @@
         /*height: 5.75rem;*/
         padding-top: 2rem;
         padding-bottom: 2rem;
-        transition: all 0.3s ease;
+        transition: all 0.15s ease-in;
         /*background: linear-gradient(180deg, rgba(29, 29, 31, 0.801), transparent);*/
     }
 
@@ -132,7 +132,7 @@
     #nav-title{
         left: 0;
         font-size: 2.3rem;
-        transition: all 0.3s ease;
+        transition: all 0.15s ease-in;
     }
 
     #nav-title.show{
@@ -148,6 +148,7 @@
         display: none;
     }
     .nav-items{
+        transition: visibility 0s ease-in, transform 0s ease-in;
         visibility: visible;
         position: static;
         top: 0;
@@ -173,7 +174,7 @@
     }
 
     .nav-item:focus{
-        padding-right: 0.3rem;
+        /*padding-right: 0.3rem;*/
 
     }
 }
