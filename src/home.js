@@ -1,6 +1,7 @@
 import '!style-loader!css-loader!./home.css';
 
 import PizzaHomeBg from './images/pizza-home-bg.png';
+
 import Menu from './menu.js';
 import Contact from './contact.js';
 
@@ -25,6 +26,7 @@ class Home {
                 	</div>
 	            </div>
 		`);
+		homeSection.style.display = "block";
 		document.querySelector("main").appendChild(homeSection);
 		document.getElementById("home-button").addEventListener("click", function(){
 			if(!(document.getElementById("menu-container"))) {
@@ -33,6 +35,7 @@ class Home {
 				if(!!(document.getElementById("home-container"))) {
 					let homeSection = document.getElementById("home-container");
 					homeSection.parentElement.removeChild(homeSection);
+					// homeSection.style.display = "none";
 					console.log("home remove Activated");
 				}
 				if(!!(document.getElementById("contact-container"))) {
@@ -47,6 +50,7 @@ class Home {
 	remove(){
 		let homeSection = document.getElementById("home-container");
 		homeSection.parentElement.removeChild(homeSection);
+		// homeSection.style.display = "none";
 		console.log("home remove Activated");
 	}
 }

@@ -3,10 +3,15 @@
     margin: 0;
     position: fixed;
     width: 100%;
-    height: 3.5rem;
-    background-color: rgba(67, 67, 71, 0);
+    height: 4.5rem;
+    background-color: rgba(20, 20, 20, 0);
     color: rgb(20, 20, 20);
     padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.main-header.opaque {
+  background-color: rgba(20, 20, 20, 1);
 }
 
 .main-nav {
@@ -44,7 +49,7 @@
     border: none;
     text-shadow: 1px 1px 0px rgba(255, 203, 255, 0.507);
     font-family: 'Lato', sans-serif;
-    outline: none;    
+    outline: none;
     vertical-align: middle;
     text-transform: uppercase;
 }
@@ -65,12 +70,8 @@
     padding: 0;
     margin: 0;
     padding-top: calc(50vh - 6rem);
-
-
     color: #fefefe;
-    background-color: rgb(67, 67, 71);
-
-
+    background-color: rgb(30, 30, 30);
     transform: translate(8rem);
     transition: all 0.25s ease-in;
     visibility: hidden;
@@ -98,8 +99,8 @@
 }
 
 .nav-item:focus {
-    -webkit-box-shadow: 0px 0px 1px 2px #FFFFFF, 0px 0px 2px 3px #969696, 0px 0px 3px 5px #000000; 
-    box-shadow: 0px 0px 1px 2px #FFFFFF, 0px 0px 2px 3px #969696, 0px 0px 3px 5px #000000; 
+    -webkit-box-shadow: 0px 0px 1px 2px #FFFFFF, 0px 0px 2px 3px #969696, 0px 0px 3px 5px #000000;
+    box-shadow: 0px 0px 1px 2px #FFFFFF, 0px 0px 2px 3px #969696, 0px 0px 3px 5px #000000;
     /*padding-right: 2.5rem;*/
 }
 .nav-item.current {
@@ -115,11 +116,11 @@
         text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.507);
         /*height: 5.75rem;*/
         padding-top: 2rem;
-        padding-bottom: 1rem;
+        padding-bottom: 2rem;
         transition: all 0.3s ease;
         /*background: linear-gradient(180deg, rgba(29, 29, 31, 0.801), transparent);*/
     }
-        
+
     .main-nav{
         position: static;
         width: 100%;
@@ -129,7 +130,7 @@
         justify-content: space-between;
     }
     #nav-title{
-        left: 0;            
+        left: 0;
         font-size: 2.3rem;
         transition: all 0.3s ease;
     }
@@ -138,10 +139,10 @@
         font-size: 1.8rem;
     }
 
-    
+
 
     .nav-margin{
-        
+
     }
     #nav-menu{
         display: none;
@@ -181,4 +182,3 @@
         /*max-width: 80rem;*/
     }
 }
-
