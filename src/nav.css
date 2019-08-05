@@ -4,15 +4,17 @@
     position: fixed;
     width: 100%;
     height: 3.5rem;
-    background-color: rgb(67, 67, 71);
+    background-color: rgba(67, 67, 71, 0);
     color: rgb(20, 20, 20);
+    padding-top: 1rem;
 }
 
 .main-nav {
-    position: absolute;
+    position: static;
     height: 100%;
     width: 100%;
-    max-width: 60rem;
+    max-width: 35rem;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -23,7 +25,7 @@
 
 #nav-title {
     display: inline-block;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lora', serif;
     font-size: 1.8rem;
     color: #f8d640;
     /* text-shadow: 1px 1px 1.5px gray, -1px -1px 0px rgba(255, 255, 255, 0.4); */
@@ -52,17 +54,20 @@
 }
 
 .nav-items {
+    z-index: 20;
     position: fixed;
     display: block;
     right: 0;
-    top: 3.86rem;
+    top: 0rem;
     font-size: 1.1rem;
     width: 8rem;
+    height: 100vh;
     padding: 0;
     margin: 0;
+    padding-top: calc(50vh - 6rem);
 
 
-    color: #eee;
+    color: #fefefe;
     background-color: rgb(67, 67, 71);
 
 
@@ -70,7 +75,9 @@
     transition: all 0.25s ease-in;
     visibility: hidden;
     }
-
+#nav-backdrop{
+    z-index: 20;
+}
 .nav-items.show {
     visibility: visible;
     transform: translate(0rem);
@@ -93,7 +100,7 @@
 .nav-item:focus {
     -webkit-box-shadow: 0px 0px 1px 2px #FFFFFF, 0px 0px 2px 3px #969696, 0px 0px 3px 5px #000000; 
     box-shadow: 0px 0px 1px 2px #FFFFFF, 0px 0px 2px 3px #969696, 0px 0px 3px 5px #000000; 
-    padding-right: 2.5rem;
+    /*padding-right: 2.5rem;*/
 }
 .nav-item.current {
     color: #fbe16a;
@@ -107,21 +114,16 @@
         /*-webkit-box-shadow: 0px 1.5px 0px 0px rgba(255, 255, 255, 0); box-shadow: 0px 1.5px 0px 0px rgba(255, 255, 255, 0);*/
         text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.507);
         /*height: 5.75rem;*/
-        padding-top: 1rem;
+        padding-top: 2rem;
         padding-bottom: 1rem;
         transition: all 0.3s ease;
         /*background: linear-gradient(180deg, rgba(29, 29, 31, 0.801), transparent);*/
     }
-    .main-header.show{
-        background-color: rgba(67, 67, 71, 1); 
-        height: 4rem;
-        padding-top: 0rem;
-        padding-bottom: 0rem;   
-        padding-left: 0.5rem;
-    }
+        
     .main-nav{
         position: static;
         width: 100%;
+        max-width: 40rem;
         padding: 0 1.5rem;
         padding-right: 0.8rem;
         justify-content: space-between;
@@ -134,7 +136,7 @@
 
     #nav-title.show{
         font-size: 1.8rem;
-        }
+    }
 
     
 
@@ -148,11 +150,16 @@
         visibility: visible;
         position: static;
         top: 0;
+        padding-top: 0;
         width: auto;
+        height: auto;
         display: inline-block;
         opacity: 1;
         transform: translate(0);
         background-color: rgba(67, 67, 71, 0);
+    }
+    #nav-backdrop{
+        display: none;
     }
     .nav-items li{
         display: inline;
@@ -171,7 +178,7 @@
 }
 @media screen and (min-width: 1100px) {
     .main-nav {
-        max-width: 80rem;
+        /*max-width: 80rem;*/
     }
 }
 

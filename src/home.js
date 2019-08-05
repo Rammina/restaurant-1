@@ -19,9 +19,9 @@ class Home {
 		homeSection.insertAdjacentHTML("beforeend", `
 				<div id="home-content">
                 	<div id="home-text">
-                    	<h1 id="home-header">Authentic Italian Pizza</h1>
-                    	<p id="home-paragraph">goodbye to drugs, embrace pizza</p>
-	                    <button id="home-button">Check our Menu</button>
+                    	<h1 id="home-header"><span id="home-header-break">Authentic </span>Italian Pizza</h1>
+                    	<p id="home-paragraph">We dream to serve only the best food to our customers!</p>
+	                    <button id="home-button">View Menu</button>
                 	</div>
 	            </div>
 		`);

@@ -10,12 +10,14 @@ class Navigation {
             <a href="#" id="nav-title">Giorno</a>
 
             <button id="nav-menu" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navbarResponsive">Menu</button>
+            <div class="backdrop" id="nav-backdrop"></div>
             <ul class="nav-items" id="navbarResponsive">
             	<li><a class="nav-item" href="#">home</a></li>
                 <li><a class="nav-item" href="#">menu</a></li>
                 <li><a class="nav-item" href="#">contact</a></li>
                 
             </ul>
+            
             </nav>
 		`);
 		
@@ -24,29 +26,40 @@ class Navigation {
 		// Dom elements of the navigation bar
 		let title = document.getElementById("nav-title");
 		let menubutton = document.getElementById("nav-menu");
+		let navBackdrop = document.getElementById("nav-backdrop");
 		let menuitems = document.querySelector(".nav-items");
 		let menuitem = document.querySelector(".nav-item");
 
+
 		function showMenu() {
-			menuitems.classList.add("show")
+			menuitems.classList.add("show");
 			menubutton.setAttribute("aria-expanded", "true");
+			navBackdrop.classList.add("show");
 		}
 		
 		function hideMenu() { 
-			menuitems.classList.remove("show")
+			menuitems.classList.remove("show");
 			menubutton.setAttribute("aria-expanded", "false");
+			navBackdrop.classList.remove("show");
 		}
 
 		menubutton.addEventListener("click", function(){
 			if((menubutton.getAttribute("aria-expanded")) === "false") {
 				showMenu();
+
 				console.log("menu has been shown");
 			}
 			else{
 				hideMenu();
 				console.log("menu has been hidden");
 			}
-		});			
+		});		
+
+		navBackdrop.addEventListener("click", function(){
+				hideMenu();
+				console.log("menu has been hidden");
+			
+		});
 	}
 
 }
