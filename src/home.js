@@ -15,6 +15,8 @@ class Home {
 		let homeSection = document.createElement("section");
 		homeSection.style.background = `url(${PizzaHomeBg})`;
 		homeSection.style.backgroundSize = 'cover';
+		homeSection.style.backgroundRepeat = 'no-repeat';
+		homeSection.style.backgroundPosition = '50% 0%';
 		// homeSection.classList.add("slider-section");
 		homeSection.id = "home-container";
 		homeSection.insertAdjacentHTML("beforeend", `

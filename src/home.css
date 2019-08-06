@@ -2,8 +2,6 @@
 	width: 100%;
 	min-height: 25rem;
 	height: 100%;
-	/* background-color: aliceblue; */
-	/* background-size: cover; */
 
 }
 
@@ -31,6 +29,7 @@
 
 	font-size: 2.3rem;
 	margin-bottom: 1rem;
+	text-shadow: 1px 1px 0px #111;
 }
 #home-header-break{
 	display: block;
@@ -38,6 +37,7 @@
 #home-paragraph{
 	font-size: 1.15rem;
 	margin-bottom: 2rem;
+	text-shadow: 1px 1px 0px #111;
 }
 
 #home-button{
