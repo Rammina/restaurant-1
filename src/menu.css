@@ -6,6 +6,7 @@
 	padding-top: 4.5rem;
 	padding-bottom: 2rem;
 	/* background-color: aliceblue; */
+	color: #111;
 }
 
 #menu-content{
@@ -13,7 +14,7 @@
 	height: 100%;
 	width: 100%;
 	background-color: rgba(244,229,164, 0.95);
-	padding: 0.8rem;
+	padding: 2rem 0.8rem;
 }
 
 #menu-flex-container{
@@ -36,13 +37,18 @@
 	text-align: center;
 }
 
-.menu-category-header{
+#menu-header {
+	font-size: 2.5rem;
+	text-shadow: 1px 1px 0px #FCC2FF, 2px 2px 0px #584459;
+}
+
+.menu-category-header {
 	min-width: 13.5rem;
 	width: 55%;
 	margin: 0 auto;
 	margin-bottom: 0.7rem;
 	/*width: 100%;*/
-	/*text-align: center;*/
+	text-align: center;
 }
 
 .menu-category{
@@ -62,24 +68,64 @@
 	/*text-align: center;*/
 }
 
+.menu-food-price {
+	float: right;
+}
+
+@media screen and (min-width: 570px) {
+	.menu-food-price {
+		padding-right: calc(2vw + 1rem);
+	}
+}
+
+@media screen and (min-width: 650px) {
+	.menu-category{
+		width: 50%;
+		margin: 0 auto;
+	}
+	.menu-food-price {
+		padding-right: 0;
+	}
+	.menu-category-header, .menu-food-items {
+		min-width: 15rem;
+	}
+	#menu-header {
+		font-size: 2.75rem;
+	}
+}
+
 @media screen and (min-width: 750px) {
 	#menu-container {
-		padding-left: 3rem;
-		padding-right: 3rem;
+		padding: 3rem;
+	}
+	#menu-flex-container {
+		margin: 0 auto;
+		max-width: 42.375rem;
 	}
 }
 
 @media screen and (min-width: 1000px) {
 	#menu-container {
 		min-height: calc(100vh);
-		padding-left: 5rem;
-		padding-right: 5rem;
+		padding: 5rem;
+		padding-top: 9.5rem;
 	}
 	#menu-content{
-		min-height: calc(100vh - 6.5rem);
+		min-height: calc(100vh - 14.5rem);
+	}
+	#menu-flex-container {
+		max-width: 65rem;
+		min-height: calc(90vh - 25rem);
+		align-content: space-around;
+	}
+	#menu-header {
+		font-size: 3.15rem;
 	}
 	.menu-category{
 		width: 33.3%;
 		margin: 0 auto;
+	}
+	.menu-food-price {
+		padding-right: 0;
 	}
 }
