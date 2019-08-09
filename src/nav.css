@@ -39,24 +39,24 @@
 }
 
 #nav-menu {
-    display: inline;
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
     font-size: 1.3rem;
     line-height: 1.3rem;
-    padding: 0.9rem 0.6rem;
-    color: #0a020a;
-    background-color: #fbe16a;
-    border-radius: 5px;
+    padding: 1rem;
+    border-radius: 3px;
     /* border: 2px solid rgba(250, 250, 250, 0.5); */
-    border: none;
-    text-shadow: 1px 1px 0px rgba(255, 203, 255, 0.507);
+    border: 1.5px solid black;
     font-family: 'Lato', sans-serif;
     outline: none;
     vertical-align: middle;
     text-transform: uppercase;
+    filter: invert(100%) sepia(37%) saturate(946%) hue-rotate(197deg) brightness(112%) contrast(100%);
 }
 
 #nav-menu:active {
-    border: 3px solid rgba(250, 250, 250, 0.5);
+    /* border: 3px solid rgba(250, 250, 250, 0.5); */
 }
 
 .nav-items {

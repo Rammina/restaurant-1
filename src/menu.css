@@ -11,6 +11,7 @@
 
 #menu-content{
 	/* padding-top: calc(50vh - 9rem); */
+	margin: 0 auto;
 	height: 100%;
 	width: 100%;
 	background-color: rgba(244,229,164, 0.95);
@@ -43,12 +44,21 @@
 }
 
 .menu-category-header {
+	position: relative;
 	min-width: 13.5rem;
 	width: 55%;
 	margin: 0 auto;
 	margin-bottom: 0.7rem;
 	/*width: 100%;*/
 	text-align: center;
+}
+
+.header-icon {
+	position: relative;
+	top: 0.3rem;
+	width: 2rem;
+	height: 2rem;
+	filter: invert(0%) sepia(85%) saturate(990%) hue-rotate(191deg) brightness(103%) contrast(87%);
 }
 
 .menu-category{
@@ -62,6 +72,7 @@
 	padding: 0;
 	/*padding-left: 1.7rem;*/
 	margin-bottom: 1rem;
+	font-style: italic;
 }
 
 .menu-food-item{
@@ -70,6 +81,8 @@
 
 .menu-food-price {
 	float: right;
+	font-style: normal;
+	color: rgb(76, 13, 78);
 }
 
 @media screen and (min-width: 570px) {
@@ -119,6 +132,7 @@
 	}
 	#menu-content{
 		min-height: calc(100vh - 14.5rem);
+		max-width: 68.75rem;
 	}
 	#menu-flex-container {
 		max-width: 65rem;

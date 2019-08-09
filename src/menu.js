@@ -1,6 +1,10 @@
 import '!style-loader!css-loader!./menu.css';
 
 import BrickMenuBg from './images/brick-menu-bg.png';
+import PizzaIcon from './images/pizza-icon.png';
+import SpaghettiIcon from './images/spaghetti-icon.png';
+import CocktailIcon from './images/cocktail-icon.png';
+
 
 class Menu {
 	render(){
@@ -14,7 +18,7 @@ class Menu {
                 	<h1 id="menu-header">Menu</h1>
                     <div id="menu-flex-container">
 						<div class="menu-category">
-							<h2 class="menu-category-header">Pizza</h2>
+							<h2 class="menu-category-header"><img class="header-icon" src="${PizzaIcon}"></img> Pizza</h2>
 							<ul class="menu-food-items">
 								<li class="menu-food-item">Gold Experience <span class="menu-food-price">$20</span></li>
 								<li class="menu-food-item">Aerosmith <span class="menu-food-price">$20</span></li>
@@ -24,7 +28,7 @@ class Menu {
 							</ul>
 						</div>
 						<div class="menu-category">
-							<h2 class="menu-category-header">Pasta</h2>
+							<h2 class="menu-category-header"><img class="header-icon" src="${SpaghettiIcon}"></img> Pasta</h2>
 							<ul class="menu-food-items">
 								<li class="menu-food-item">Spaghetti Nero<span class="menu-food-price">$20</span></li>
 								<li class="menu-food-item">Spaghetti aglio e olio<span class="menu-food-price">$20</span></li>
@@ -36,7 +40,7 @@ class Menu {
 							
 						</div>
 						<div class="menu-category">
-							<h2 class="menu-category-header">Cocktail</h2>
+							<h2 class="menu-category-header"><img class="header-icon" src="${CocktailIcon}"></img> Cocktail</h2>
 							<ul class="menu-food-items">
 								<li class="menu-food-item">Moody Blues<span class="menu-food-price">$20</span></li>
 								<li class="menu-food-item">Purple Haze<span class="menu-food-price">$20</span></li>
@@ -48,7 +52,7 @@ class Menu {
 							
 						</div>
 						<div class="menu-category">
-							<h2 class="menu-category-header">Pizza</h2>
+							<h2 class="menu-category-header"><img class="header-icon" src="${PizzaIcon}"></img> Pizza</h2>
 							<ul class="menu-food-items">
 								<li class="menu-food-item">Gold Experience<span class="menu-food-price">$20</span></li>
 								<li class="menu-food-item">Aerosmith<span class="menu-food-price">$20</span></li>
@@ -58,7 +62,7 @@ class Menu {
 							</ul>
 						</div>
 						<div class="menu-category">
-							<h2 class="menu-category-header">Pasta</h2>
+							<h2 class="menu-category-header"><img class="header-icon" src="${SpaghettiIcon}"></img> Pasta</h2>
 							<ul class="menu-food-items">
 								<li class="menu-food-item">Spaghetti Nero<span class="menu-food-price">$20</span></li>
 								<li class="menu-food-item">Spaghetti aglio e olio<span class="menu-food-price">$20</span></li>
@@ -70,7 +74,7 @@ class Menu {
 							
 						</div>
 						<div class="menu-category">
-							<h2 class="menu-category-header">Cocktail</h2>
+							<h2 class="menu-category-header"><img class="header-icon" src="${CocktailIcon}"></img> Cocktail</h2>
 							<ul class="menu-food-items">
 								<li class="menu-food-item">Moody Blues<span class="menu-food-price">$20</span></li>
 								<li class="menu-food-item">Purple Haze<span class="menu-food-price">$20</span></li>

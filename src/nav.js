@@ -1,5 +1,8 @@
 import '!style-loader!css-loader!./nav.css';
 
+import HamburgerIcon from './images/hamburger-icon.png';
+
+
 class Navigation {
 	render(){
 		let navbar = document.createElement("header");
@@ -9,7 +12,7 @@ class Navigation {
             <!--  The anchor tag needs to link to the page top-->
             <a href="#" id="nav-title">Giorno</a>
 
-            <button id="nav-menu" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navbarResponsive">Menu</button>
+            <button id="nav-menu" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navbarResponsive"></button>
             <div class="backdrop" id="nav-backdrop"></div>
             <ul class="nav-items" id="navbarResponsive">
             	<li><a class="nav-item" href="#">home</a></li>
@@ -30,6 +33,10 @@ class Navigation {
 		let menuitems = document.querySelector(".nav-items");
 		let menuitem = document.querySelector(".nav-item");
 
+		menubutton.style.background = `url(${HamburgerIcon})`;
+		menubutton.style.backgroundSize = 'cover';
+		menubutton.style.backgroundRepeat = 'no-repeat';
+		menubutton.style.backgroundPosition = '50% 50%';
 
 		function showMenu() {
 			menuitems.classList.add("show");
