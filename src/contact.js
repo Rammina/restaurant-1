@@ -31,11 +31,11 @@ class Contact {
                     	<div class="contact-form-container">
                             <div class="contact-form-text">
                               <h2 id="first-contact"><a name="contact" tabindex="-1">Contact Us</a></h2>
-                              <form class="contact-flex">
+                              <form class="contact-form-flex">
                                 <div class="contact-field-1">
                                   <input class="contact-text-input default" id="contact-name" type="text" placeholder="Your Name..." maxlength="100" />
                                   <div class="form-error-message" id="name-error">Please input a valid name.</div>
-                              <input class="contact-text-input default" id="contact-email" type="email" placeholder="Your Email..." value="Your Email..." maxlength="254" />
+                              <input class="contact-text-input default" id="contact-email" type="email" placeholder="Your Email..." maxlength="254" />
                                   <div class="form-error-message" id="email-error">Please input a valid email address.</div>
                                   <input class="contact-text-input default" id="contact-phone" type="text" placeholder="Your Phone Number..." maxlength="24" />
                                   <div class="form-error-message" id="phone-error">Please input a valid phone number.</div>

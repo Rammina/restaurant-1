@@ -38,7 +38,7 @@
 }
 
 #contact-flex-container{
-	display: flex;
+    display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	align-items: center;
@@ -95,12 +95,13 @@
     
 }
 
-.contact-flex {
+.contact-form-flex {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
+    margin-bottom: 1rem;
 }
 
 .contact-field-1 {
@@ -120,7 +121,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    position: absolute;
+    position: relative;
     text-align: left;
     vertical-align: middle;
     width: 100%;
@@ -155,7 +156,7 @@
 .contact-text-input {
     display: block;
     text-align: left;
-    min-width: 16.5rem;
+    min-width: 16rem;
     width: 80%;
     max-width: 33rem;
     padding: 1rem 0rem;
@@ -171,6 +172,16 @@
 	border: none;
 	border-bottom: 1.5px solid #222;
     background-color: rgba(240, 240, 240, 0);
+}
+
+.contact-text-input:active {
+    -webkit-box-shadow: 0px 0px 1px 1px rgba(21,0,25,0), 0px 0px 4px 2px rgba(21,0,25,0.5); 
+    box-shadow: 0px 0px 1px 1px rgba(21,0,25,0), 0px 0px 4px 2px rgba(21,0,25,0.5);
+}
+
+.contact-text-input:focus {
+    -webkit-box-shadow: 0px 0px 1px 1px rgba(21,0,25,0), 0px 0px 4px 2px rgba(21,0,25,0.5); 
+    box-shadow: 0px 0px 1px 1px rgba(21,0,25,0), 0px 0px 4px 2px rgba(21,0,25,0.5);
 }
 
 .form-error-message{
@@ -287,9 +298,42 @@ input[type="text"], textarea {
 	}
 	#contact-header {
 		font-size: 2.5rem;
-	}
+    }
+    #contact-text {
+        margin-bottom: 2rem;
+    }
+    #contact-flex-container {
+        position: relative;
+        max-width: 35rem;
+    }
 	.contact-flex-item{
 		width: 50%;
-		
-	}
+    }
+    .contact-form-container {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .contact-form-text {
+        position: relative;
+        max-width: 55rem;
+        margin: 0 auto;
+    }
+    .contact-form-flex {
+        max-width: 55rem;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+    }
+    .contact-field-1 {
+        width: 47%;
+    }
+    .contact-field-2 {
+        width: 53%;
+    }
+    .contact-text-input {
+        width: 85%;
+    }
+    #contact-message {
+        height: 12.52rem;
+    }
 }
